@@ -1,0 +1,85 @@
+<h1>PHONGBAN</h1>
+<table border="1">
+<tr>
+    <th>Mã PHG</th>
+    <th>Tên PHG</th>
+</tr>
+{% for p in phongban %}
+<tr>
+    <td>{{ p.maphg }}</td>
+    <td>{{ p.tenphg }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<hr>
+
+<h1>NHANVIEN</h1>
+<table border="1">
+<tr>
+    <th>Mã NV</th>
+    <th>Họ</th>
+    <th>Tên</th>
+    <th>Lương</th>
+</tr>
+{% for nv in nhanvien %}
+<tr>
+    <td>{{ nv.manv }}</td>
+    <td>{{ nv.honv }}</td>
+    <td>{{ nv.tennv }}</td>
+    <td>{{ nv.luong }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<hr>
+
+<h1>DEAN</h1>
+<table border="1">
+<tr>
+    <th>Mã DA</th>
+    <th>Tên DA</th>
+</tr>
+{% for d in dean %}
+<tr>
+    <td>{{ d.mada }}</td>
+    <td>{{ d.tenda }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<hr>
+
+<h1>PHANCONG</h1>
+<table border="1">
+<tr>
+    <th>Mã NV</th>
+    <th>Mã DA</th>
+    <th>Thời gian</th>
+</tr>
+{% for pc in phancong %}
+<tr>
+    <td>{{ pc.manv_id }}</td>
+    <td>{{ pc.mada_id }}</td>
+    <td>{{ pc.thoigian }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<hr>
+
+<h1>THANNHAN</h1>
+<table border="1">
+<tr>
+    <th>Mã NV</th>
+    <th>Tên TN</th>
+    <th>Quan hệ</th>
+</tr>
+{% for tn in thannhan %}
+<tr>
+    <td>{{ tn.manv_id }}</td>
+    <td>{{ tn.tentn }}</td>
+    <td>{{ tn.quanhe }}</td>
+</tr>
+{% endfor %}
+</table>
